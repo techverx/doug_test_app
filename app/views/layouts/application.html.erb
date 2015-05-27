@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="app">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rails/Angular Test App</title>
+        <link rel="stylesheet" type="text/css" id="theme" href="assets/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" id="theme" href="assets/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" id="theme" href="assets/awesome-bootstrap-checkbox.css">
+        <link rel="stylesheet" type="text/css" id="theme" href="assets/signin.css">
+        <%= stylesheet_link_tag    "application", :media => "all" %>
+        <%= csrf_meta_tags %>
+    </head>
+    <body>
+        
+        <div ui-view="" class="container"> 
+            
+        </div>
+        
+        <%= javascript_include_tag "application" %>
+        
+    </body>
+</html>

@@ -1,0 +1,29 @@
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Rails/Angular</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a ng-click="addTodo()" style="cursor:pointer">Add Todo</a></li>
+                <li><a ng-click="logout()" style="cursor:pointer">Logout</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<table class="table">
+    <tr ng-repeat="todo in todos">
+        <td>
+            <a href="#" 
+               editable-text="todo.description" 
+               onaftersave="saveTodo($index)">
+                {{todo.description || 'Click to edit description'}}
+            </a>
+        </td>
+        <td style="text-align:right">
+            <a ng-click="deleteTodo($index)" style="cursor:pointer">
+                <i class="fa fa-times-circle-o fa-lg"></i>
+            </a>
+        </td>
+    </tr>
+</table>

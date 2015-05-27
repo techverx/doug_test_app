@@ -1,0 +1,12 @@
+//= require angular
+//= require angular/app
+//= require ui-router
+//= require ngstorage
+//= require angular-bootstrap
+//= require angular-cookies
+//= require angular-bootstrap/ui-bootstrap-tpls
+//= require angular-toastr
+//= require angular-loading-bar
+//= require angular-xeditable
+//= require angular-permission
+//= require_tree .
